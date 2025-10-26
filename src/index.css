@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-excel text-excel-text-primary bg-excel-background;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code {
+    @apply font-mono;
+  }
+}
+
+@layer components {
+  /* Excel-like button styles */
+  .btn-excel {
+    @apply px-excel-xl py-excel-md text-excel-base font-medium rounded-excel border border-excel-border bg-white text-excel-text-primary hover:bg-excel-hover focus:outline-none focus:ring-2 focus:ring-excel-blue-500 focus:ring-offset-1 transition-colors duration-150;
+  }
+  
+  .btn-excel-primary {
+    @apply bg-excel-blue-500 text-white border-excel-blue-500 hover:bg-excel-blue-600 focus:ring-excel-blue-500;
+  }
+  
+  .btn-excel-secondary {
+    @apply bg-excel-gray-100 text-excel-text-primary border-excel-border hover:bg-excel-gray-200 focus:ring-excel-gray-300;
+  }
+
+  /* Excel-like input styles */
+  .input-excel {
+    @apply px-excel-lg py-excel-md text-excel-base border border-excel-border rounded-excel bg-white text-excel-text-primary placeholder-excel-text-muted focus:outline-none focus:ring-2 focus:ring-excel-blue-500 focus:border-excel-blue-500 transition-colors duration-150;
+  }
+
+  /* Excel-like table styles */
+  .table-excel {
+    @apply border-collapse border border-excel-border;
+  }
+  
+  .table-excel th {
+    @apply bg-excel-header text-white text-excel-base font-medium px-excel-lg py-excel-md border border-excel-border text-left;
+  }
+  
+  .table-excel td {
+    @apply px-excel-lg py-excel-md text-excel-base border border-excel-border bg-white;
+  }
+  
+  .table-excel tr:hover td {
+    @apply bg-excel-hover;
+  }
+
+  /* Excel-like sidebar styles */
+  .sidebar-excel {
+    @apply bg-excel-sidebar border-r border-excel-border h-full;
+  }
+}
